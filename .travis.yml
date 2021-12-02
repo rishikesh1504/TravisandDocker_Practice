@@ -3,7 +3,11 @@ python:
   - "3.6"
 services:
    -  docker
-before_script: pip install docker
+before_script:
+      -  pip install docker
+      -  docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+       
 
 script:
-  - docker build -t sampledockerimage .
+  - docker build -t kyamajir123/sampledockerimage .
+  - docker push -a 
