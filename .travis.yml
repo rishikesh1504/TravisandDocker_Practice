@@ -10,4 +10,4 @@ before_script:
 
 script:
   - docker build -t kyamajir123/sampledockerimage .
-  - docker push -a 
+  - docker push kyamajir123/sampledockerimage 
