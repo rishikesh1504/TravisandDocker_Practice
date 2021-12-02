@@ -9,5 +9,5 @@ before_script:
        
 
 script:
-  - docker build -t kyamajir123/sampledockerimage .
-  - docker push kyamajir123/sampledockerimage 
+  - docker build -t kyamajir123/travisdocker .
+  - docker push kyamajir123/travisdocker:latest
